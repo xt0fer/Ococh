@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CAC102528BD27E1001B2D2C /* OcochApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102428BD27E1001B2D2C /* OcochApp.swift */; };
+		5CAC102728BD27E1001B2D2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102628BD27E1001B2D2C /* ContentView.swift */; };
+		5CAC102928BD27E3001B2D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC102828BD27E3001B2D2C /* Assets.xcassets */; };
+		5CAC102C28BD27E3001B2D2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC102B28BD27E3001B2D2C /* Preview Assets.xcassets */; };
+		5CAC102E28BD27E3001B2D2C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102D28BD27E3001B2D2C /* Persistence.swift */; };
+		5CAC103128BD27E3001B2D2C /* Ococh.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102F28BD27E3001B2D2C /* Ococh.xcdatamodeld */; };
+		5CAC103B28BD27E3001B2D2C /* OcochTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC103A28BD27E3001B2D2C /* OcochTests.swift */; };
+		5CAC104528BD27E3001B2D2C /* OcochUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC104428BD27E3001B2D2C /* OcochUITests.swift */; };
+		5CAC104728BD27E3001B2D2C /* OcochUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC104628BD27E3001B2D2C /* OcochUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CAC103728BD27E3001B2D2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CAC101928BD27E1001B2D2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CAC102028BD27E1001B2D2C;
+			remoteInfo = Ococh;
+		};
+		5CAC104128BD27E3001B2D2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CAC101928BD27E1001B2D2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CAC102028BD27E1001B2D2C;
+			remoteInfo = Ococh;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5CAC102128BD27E1001B2D2C /* Ococh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ococh.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CAC102428BD27E1001B2D2C /* OcochApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcochApp.swift; sourceTree = "<group>"; };
+		5CAC102628BD27E1001B2D2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5CAC102828BD27E3001B2D2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CAC102B28BD27E3001B2D2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5CAC102D28BD27E3001B2D2C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5CAC103028BD27E3001B2D2C /* Ococh.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ococh.xcdatamodel; sourceTree = "<group>"; };
+		5CAC103628BD27E3001B2D2C /* OcochTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OcochTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CAC103A28BD27E3001B2D2C /* OcochTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcochTests.swift; sourceTree = "<group>"; };
+		5CAC104028BD27E3001B2D2C /* OcochUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OcochUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CAC104428BD27E3001B2D2C /* OcochUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcochUITests.swift; sourceTree = "<group>"; };
+		5CAC104628BD27E3001B2D2C /* OcochUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcochUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CAC101E28BD27E1001B2D2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CAC103328BD27E3001B2D2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CAC103D28BD27E3001B2D2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CAC101828BD27E1001B2D2C = {
+			isa = PBXGroup;
+			children = (
+				5CAC102328BD27E1001B2D2C /* Ococh */,
+				5CAC103928BD27E3001B2D2C /* OcochTests */,
+				5CAC104328BD27E3001B2D2C /* OcochUITests */,
+				5CAC102228BD27E1001B2D2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5CAC102228BD27E1001B2D2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CAC102128BD27E1001B2D2C /* Ococh.app */,
+				5CAC103628BD27E3001B2D2C /* OcochTests.xctest */,
+				5CAC104028BD27E3001B2D2C /* OcochUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CAC102328BD27E1001B2D2C /* Ococh */ = {
+			isa = PBXGroup;
+			children = (
+				5CAC102428BD27E1001B2D2C /* OcochApp.swift */,
+				5CAC102628BD27E1001B2D2C /* ContentView.swift */,
+				5CAC102828BD27E3001B2D2C /* Assets.xcassets */,
+				5CAC102D28BD27E3001B2D2C /* Persistence.swift */,
+				5CAC102F28BD27E3001B2D2C /* Ococh.xcdatamodeld */,
+				5CAC102A28BD27E3001B2D2C /* Preview Content */,
+			);
+			path = Ococh;
+			sourceTree = "<group>";
+		};
+		5CAC102A28BD27E3001B2D2C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5CAC102B28BD27E3001B2D2C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5CAC103928BD27E3001B2D2C /* OcochTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CAC103A28BD27E3001B2D2C /* OcochTests.swift */,
+			);
+			path = OcochTests;
+			sourceTree = "<group>";
+		};
+		5CAC104328BD27E3001B2D2C /* OcochUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5CAC104428BD27E3001B2D2C /* OcochUITests.swift */,
+				5CAC104628BD27E3001B2D2C /* OcochUITestsLaunchTests.swift */,
+			);
+			path = OcochUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CAC102028BD27E1001B2D2C /* Ococh */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CAC104A28BD27E3001B2D2C /* Build configuration list for PBXNativeTarget "Ococh" */;
+			buildPhases = (
+				5CAC101D28BD27E1001B2D2C /* Sources */,
+				5CAC101E28BD27E1001B2D2C /* Frameworks */,
+				5CAC101F28BD27E1001B2D2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ococh;
+			productName = Ococh;
+			productReference = 5CAC102128BD27E1001B2D2C /* Ococh.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5CAC103528BD27E3001B2D2C /* OcochTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CAC104D28BD27E3001B2D2C /* Build configuration list for PBXNativeTarget "OcochTests" */;
+			buildPhases = (
+				5CAC103228BD27E3001B2D2C /* Sources */,
+				5CAC103328BD27E3001B2D2C /* Frameworks */,
+				5CAC103428BD27E3001B2D2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CAC103828BD27E3001B2D2C /* PBXTargetDependency */,
+			);
+			name = OcochTests;
+			productName = OcochTests;
+			productReference = 5CAC103628BD27E3001B2D2C /* OcochTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5CAC103F28BD27E3001B2D2C /* OcochUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CAC105028BD27E3001B2D2C /* Build configuration list for PBXNativeTarget "OcochUITests" */;
+			buildPhases = (
+				5CAC103C28BD27E3001B2D2C /* Sources */,
+				5CAC103D28BD27E3001B2D2C /* Frameworks */,
+				5CAC103E28BD27E3001B2D2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CAC104228BD27E3001B2D2C /* PBXTargetDependency */,
+			);
+			name = OcochUITests;
+			productName = OcochUITests;
+			productReference = 5CAC104028BD27E3001B2D2C /* OcochUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CAC101928BD27E1001B2D2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					5CAC102028BD27E1001B2D2C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					5CAC103528BD27E3001B2D2C = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 5CAC102028BD27E1001B2D2C;
+					};
+					5CAC103F28BD27E3001B2D2C = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 5CAC102028BD27E1001B2D2C;
+					};
+				};
+			};
+			buildConfigurationList = 5CAC101C28BD27E1001B2D2C /* Build configuration list for PBXProject "Ococh" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CAC101828BD27E1001B2D2C;
+			productRefGroup = 5CAC102228BD27E1001B2D2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CAC102028BD27E1001B2D2C /* Ococh */,
+				5CAC103528BD27E3001B2D2C /* OcochTests */,
+				5CAC103F28BD27E3001B2D2C /* OcochUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CAC101F28BD27E1001B2D2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CAC102C28BD27E3001B2D2C /* Preview Assets.xcassets in Resources */,
+				5CAC102928BD27E3001B2D2C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CAC103428BD27E3001B2D2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CAC103E28BD27E3001B2D2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CAC101D28BD27E1001B2D2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CAC102E28BD27E3001B2D2C /* Persistence.swift in Sources */,
+				5CAC102728BD27E1001B2D2C /* ContentView.swift in Sources */,
+				5CAC103128BD27E3001B2D2C /* Ococh.xcdatamodeld in Sources */,
+				5CAC102528BD27E1001B2D2C /* OcochApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CAC103228BD27E3001B2D2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CAC103B28BD27E3001B2D2C /* OcochTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CAC103C28BD27E3001B2D2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CAC104528BD27E3001B2D2C /* OcochUITests.swift in Sources */,
+				5CAC104728BD27E3001B2D2C /* OcochUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CAC103828BD27E3001B2D2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CAC102028BD27E1001B2D2C /* Ococh */;
+			targetProxy = 5CAC103728BD27E3001B2D2C /* PBXContainerItemProxy */;
+		};
+		5CAC104228BD27E3001B2D2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CAC102028BD27E1001B2D2C /* Ococh */;
+			targetProxy = 5CAC104128BD27E3001B2D2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5CAC104828BD27E3001B2D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CAC104928BD27E3001B2D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CAC104B28BD27E3001B2D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ococh/Preview Content\"";
+				DEVELOPMENT_TEAM = S7ZKK95T9U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiogadigital.Ococh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CAC104C28BD27E3001B2D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Ococh/Preview Content\"";
+				DEVELOPMENT_TEAM = S7ZKK95T9U;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiogadigital.Ococh;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5CAC104E28BD27E3001B2D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S7ZKK95T9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiogadigital.OcochTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ococh.app/Ococh";
+			};
+			name = Debug;
+		};
+		5CAC104F28BD27E3001B2D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S7ZKK95T9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiogadigital.OcochTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ococh.app/Ococh";
+			};
+			name = Release;
+		};
+		5CAC105128BD27E3001B2D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S7ZKK95T9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiogadigital.OcochUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ococh;
+			};
+			name = Debug;
+		};
+		5CAC105228BD27E3001B2D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S7ZKK95T9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiogadigital.OcochUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Ococh;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CAC101C28BD27E1001B2D2C /* Build configuration list for PBXProject "Ococh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CAC104828BD27E3001B2D2C /* Debug */,
+				5CAC104928BD27E3001B2D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CAC104A28BD27E3001B2D2C /* Build configuration list for PBXNativeTarget "Ococh" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CAC104B28BD27E3001B2D2C /* Debug */,
+				5CAC104C28BD27E3001B2D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CAC104D28BD27E3001B2D2C /* Build configuration list for PBXNativeTarget "OcochTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CAC104E28BD27E3001B2D2C /* Debug */,
+				5CAC104F28BD27E3001B2D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CAC105028BD27E3001B2D2C /* Build configuration list for PBXNativeTarget "OcochUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CAC105128BD27E3001B2D2C /* Debug */,
+				5CAC105228BD27E3001B2D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5CAC102F28BD27E3001B2D2C /* Ococh.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5CAC103028BD27E3001B2D2C /* Ococh.xcdatamodel */,
+			);
+			currentVersion = 5CAC103028BD27E3001B2D2C /* Ococh.xcdatamodel */;
+			path = Ococh.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5CAC101928BD27E1001B2D2C /* Project object */;
+}
