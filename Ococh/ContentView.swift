@@ -14,12 +14,12 @@ struct ContentView: View {
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
-    private var items: FetchedResults<Item>
+    private var bookmarks: FetchedResults<Bookmark>
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(items) { item in
+                ForEach(bookmarks) { item in
                     NavigationLink {
                         Text("Item at \(item.timestamp!, formatter: itemFormatter)")
                     } label: {
