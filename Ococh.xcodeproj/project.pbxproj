@@ -27,6 +27,7 @@
 		5CAC107128BD3BDE001B2D2C /* DarwinNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC107028BD3BDE001B2D2C /* DarwinNotificationCenter.swift */; };
 		5CAC107228BD3EFB001B2D2C /* DarwinNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC107028BD3BDE001B2D2C /* DarwinNotificationCenter.swift */; };
 		5CAC107528BD8F8D001B2D2C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAC105528BD2909001B2D2C /* CloudKit.framework */; };
+		5CAC107828BE4BC7001B2D2C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC107728BE4BC7001B2D2C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		5CAC107028BD3BDE001B2D2C /* DarwinNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarwinNotificationCenter.swift; sourceTree = "<group>"; };
 		5CAC107328BD8F70001B2D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5CAC107428BD8F89001B2D2C /* SaveBookmark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SaveBookmark.entitlements; sourceTree = "<group>"; };
+		5CAC107728BE4BC7001B2D2C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		5CAC101828BD27E1001B2D2C = {
 			isa = PBXGroup;
 			children = (
+				5CAC107728BE4BC7001B2D2C /* README.md */,
 				5CAC102328BD27E1001B2D2C /* Ococh */,
 				5CAC103928BD27E3001B2D2C /* OcochTests */,
 				5CAC104328BD27E3001B2D2C /* OcochUITests */,
@@ -339,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CAC107828BE4BC7001B2D2C /* README.md in Resources */,
 				5CAC102C28BD27E3001B2D2C /* Preview Assets.xcassets in Resources */,
 				5CAC102928BD27E3001B2D2C /* Assets.xcassets in Resources */,
 			);

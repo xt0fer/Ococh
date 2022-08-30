@@ -39,6 +39,8 @@ public class Storage {
         
         // important option and import refresh...
         container.viewContext.automaticallyMergesChangesFromParent = true
+        container.viewContext.mergePolicy = NSMergeByPropertyStoreTrumpMergePolicy
+
         container.viewContext.refreshAllObjects()
         
         return container
@@ -92,6 +94,11 @@ public class Storage {
                 Foundation.NSLog("unable to save \(error)")
             }
         }
+    }
+    
+    func refresh() {
+        let vc = container.viewContext
+        vc.refreshAllObjects()
     }
     
     static var preview: Storage = {

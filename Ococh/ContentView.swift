@@ -7,12 +7,18 @@
 
 import SwiftUI
 import CoreData
+import CloudKit
 
 struct ContentView: View {
     //@Environment(\.managedObjectContext) private var viewContext
 
     private var bookmarks = Bookmark.getAll()
+    @State var statusString = "status?"
+
     var body: some View {
+        VStack{
+            Text(statusString)
+        
         NavigationView {
             List {
                 ForEach(bookmarks) { item in
@@ -35,6 +41,11 @@ struct ContentView: View {
                 }
             }
             Text("Select an item")
+        }
+        }
+        .onAppear(){
+            self.checkStatus()
+            Storage.shared.refresh()
         }
     }
 
@@ -67,6 +78,34 @@ struct ContentView: View {
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 let nsError = error as NSError
                 fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            }
+        }
+    }
+    
+    func checkStatus() {
+        CKContainer.default().accountStatus { status, error in
+            if let error = error {
+              // some error occurred (probably a failed connection, try again)
+                statusString = "error \(error.localizedDescription)"
+            } else {
+                switch status {
+                case .available:
+                  // the user is logged in
+                    statusString =  "User Logged in"
+                case .noAccount:
+                  // the user is NOT logged in
+                    statusString =  "User NOT Logged in"
+
+                case .couldNotDetermine:
+                  // for some reason, the status could not be determined (try again)
+                    statusString =  "Could Not Determine"
+
+                case .restricted:
+                  // iCloud settings are restricted by parental controls or a configuration profile
+                    statusString =  "Settings are Restricted"
+                default:
+                    statusString = "unknown state!"
+                }
             }
         }
     }

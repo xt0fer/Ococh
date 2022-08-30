@@ -16,17 +16,53 @@ class ShareViewController: SLComposeServiceViewController {
     }
 
     override func didSelectPost() {
-        if let item = extensionContext?.inputItems.first as? NSExtensionItem,
-            let itemProvider = item.attachments?.first as? NSItemProvider,
-            itemProvider.hasItemConformingToTypeIdentifier("public.url") {
-            itemProvider.loadItem(forTypeIdentifier: "public.url", options: nil) { (url, error) in
-                if let shareURL = url as? URL {
-                    // do what you want to do with shareURL
-                    self.saveURLtoCoreData(shareURL)
+        if let item = extensionContext?.inputItems.first as? NSExtensionItem {
+            if let attachments = item.attachments {
+                for attachment: NSItemProvider in attachments {
+                    printProvider(prov: attachment)
+                    if attachment.hasItemConformingToTypeIdentifier("public.text") {
+                        attachment.loadItem(forTypeIdentifier: "public.text", options: nil, completionHandler: { text, _ in
+
+                            print("KKYY text url? \(text)")
+                            self.extensionContext?.completeRequest(returningItems: [], completionHandler:nil)
+
+                        })
+                    }
+                    if attachment.hasItemConformingToTypeIdentifier("public.url") {
+                        attachment.loadItem(forTypeIdentifier: "public.url", options: nil, completionHandler: { (url, error) in
+                            if let shareURL = url as? URL {
+                                // do what you want to do with shareURL
+                                self.saveURLtoCoreData(shareURL)
+                            }
+                            self.extensionContext?.completeRequest(returningItems: [], completionHandler:nil)
+                        })
+                    }
+                    if attachment.hasItemConformingToTypeIdentifier("com.adobe.pdf") {
+                        attachment.loadItem(forTypeIdentifier: "com.adobe.pdf", options: nil, completionHandler: { (url, error) in
+                            print("KKYY pdf url \(url)")
+                            if let shareURL = url as? URL {
+                                // do what you want to do with shareURL
+                                self.saveURLtoCoreData(shareURL)
+                            }
+                            self.extensionContext?.completeRequest(returningItems: [], completionHandler:nil)
+                        })
+                    }
                 }
-                self.extensionContext?.completeRequest(returningItems: [], completionHandler:nil)
             }
         }
+//        if let item = extensionContext?.inputItems.first as? NSExtensionItem,
+//            let itemProvider = item.attachments?.first as? NSItemProvider,
+//            itemProvider.hasItemConformingToTypeIdentifier("public.url") {
+//            itemProvider.loadItem(forTypeIdentifier: "public.url", options: nil) { (url, error) in
+//                if let shareURL = url as? URL {
+//                    // do what you want to do with shareURL
+//                    self.saveURLtoCoreData(shareURL)
+//                }
+//                self.extensionContext?.completeRequest(returningItems: [], completionHandler:nil)
+//            }
+//        } else {
+//            self.extensionContext?.completeRequest(returningItems: [], completionHandler:nil)
+//        }
     }
 
     override func configurationItems() -> [Any]! {
@@ -40,8 +76,21 @@ class ShareViewController: SLComposeServiceViewController {
         let vc = store.container.viewContext
         let _ = Bookmark(title: self.contentText, link: url.absoluteString, insertIntoManagedObjectContext: vc)
         store.save()
+        vc.refreshAllObjects()
         let c = Bookmark.getAll().count
         Foundation.NSLog("KKYY b, c [\(b), \(c)]")
     }
+    
+    private func printProvider(prov: NSItemProvider) {
+        // print out all the type IDs in the Provider.
+        //
+        let f = prov.registeredTypeIdentifiers;
+        // what could I send in for fileOptions:?
+        //let g = prov.registeredTypeIdentifiers(fileOptions: NSItemProviderFileOptions)
+        for s in f {
+            print("KKYY registeredTypeIdentifier \(s)")
+        }
+    }
+
 
 }
