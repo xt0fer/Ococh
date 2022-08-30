@@ -28,6 +28,7 @@
 		5CAC107228BD3EFB001B2D2C /* DarwinNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC107028BD3BDE001B2D2C /* DarwinNotificationCenter.swift */; };
 		5CAC107528BD8F8D001B2D2C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAC105528BD2909001B2D2C /* CloudKit.framework */; };
 		5CAC107828BE4BC7001B2D2C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC107728BE4BC7001B2D2C /* README.md */; };
+		5CAC107928BE4FDA001B2D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC102828BD27E3001B2D2C /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -366,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CAC107928BE4FDA001B2D2C /* Assets.xcassets in Resources */,
 				5CAC106128BD2A41001B2D2C /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
