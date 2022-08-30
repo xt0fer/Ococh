@@ -9,32 +9,28 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
+    //@Environment(\.managedObjectContext) private var viewContext
 
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var bookmarks: FetchedResults<Bookmark>
-
+    private var bookmarks = Bookmark.getAll()
     var body: some View {
         NavigationView {
             List {
                 ForEach(bookmarks) { item in
                     NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
+                        BookmarkView(bookmark: item)
                     } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+                        BookmarkCell(bookmark: item)
                     }
                 }
-                .onDelete(perform: deleteItems)
+                .onDelete(perform: deleteBookmarks)
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     EditButton()
                 }
                 ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                    Button(action: addBookmark) {
+                        Label("Add Bookmark", systemImage: "plus")
                     }
                 }
             }
@@ -42,13 +38,13 @@ struct ContentView: View {
         }
     }
 
-    private func addItem() {
+    private func addBookmark() {
         withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            let vc = Storage.shared.container.viewContext
+            var _ = Bookmark(title: "A URL", link: "https://tioga.digital", insertIntoManagedObjectContext: vc)
 
             do {
-                try viewContext.save()
+                try vc.save()
             } catch {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
@@ -58,12 +54,14 @@ struct ContentView: View {
         }
     }
 
-    private func deleteItems(offsets: IndexSet) {
+    private func deleteBookmarks(offsets: IndexSet) {
         withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
+            let vc = Storage.shared.container.viewContext
+
+            offsets.map { bookmarks[$0] }.forEach(vc.delete)
 
             do {
-                try viewContext.save()
+                try vc.save()
             } catch {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
@@ -74,7 +72,7 @@ struct ContentView: View {
     }
 }
 
-private let itemFormatter: DateFormatter = {
+let itemFormatter: DateFormatter = {
     let formatter = DateFormatter()
     formatter.dateStyle = .short
     formatter.timeStyle = .medium
@@ -83,6 +81,6 @@ private let itemFormatter: DateFormatter = {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView().environment(\.managedObjectContext, Storage.preview.container.viewContext)
     }
 }

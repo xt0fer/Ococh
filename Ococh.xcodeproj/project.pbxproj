@@ -17,6 +17,16 @@
 		5CAC104528BD27E3001B2D2C /* OcochUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC104428BD27E3001B2D2C /* OcochUITests.swift */; };
 		5CAC104728BD27E3001B2D2C /* OcochUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC104628BD27E3001B2D2C /* OcochUITestsLaunchTests.swift */; };
 		5CAC105628BD2909001B2D2C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAC105528BD2909001B2D2C /* CloudKit.framework */; };
+		5CAC105E28BD2A41001B2D2C /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC105D28BD2A41001B2D2C /* ShareViewController.swift */; };
+		5CAC106128BD2A41001B2D2C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC105F28BD2A41001B2D2C /* MainInterface.storyboard */; };
+		5CAC106528BD2A41001B2D2C /* SaveBookmark.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5CAC105B28BD2A41001B2D2C /* SaveBookmark.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5CAC106B28BD2B41001B2D2C /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC106A28BD2B41001B2D2C /* BookmarkCell.swift */; };
+		5CAC106D28BD2B53001B2D2C /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC106C28BD2B53001B2D2C /* BookmarkView.swift */; };
+		5CAC106E28BD31F0001B2D2C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102D28BD27E3001B2D2C /* Persistence.swift */; };
+		5CAC106F28BD3412001B2D2C /* Ococh.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102F28BD27E3001B2D2C /* Ococh.xcdatamodeld */; };
+		5CAC107128BD3BDE001B2D2C /* DarwinNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC107028BD3BDE001B2D2C /* DarwinNotificationCenter.swift */; };
+		5CAC107228BD3EFB001B2D2C /* DarwinNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC107028BD3BDE001B2D2C /* DarwinNotificationCenter.swift */; };
+		5CAC107528BD8F8D001B2D2C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAC105528BD2909001B2D2C /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +44,28 @@
 			remoteGlobalIDString = 5CAC102028BD27E1001B2D2C;
 			remoteInfo = Ococh;
 		};
+		5CAC106328BD2A41001B2D2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CAC101928BD27E1001B2D2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CAC105A28BD2A41001B2D2C;
+			remoteInfo = SaveBookmark;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5CAC106928BD2A41001B2D2C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5CAC106528BD2A41001B2D2C /* SaveBookmark.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5CAC102128BD27E1001B2D2C /* Ococh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ococh.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +82,15 @@
 		5CAC104628BD27E3001B2D2C /* OcochUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcochUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5CAC105328BD28F4001B2D2C /* Ococh.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ococh.entitlements; sourceTree = "<group>"; };
 		5CAC105528BD2909001B2D2C /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		5CAC105B28BD2A41001B2D2C /* SaveBookmark.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SaveBookmark.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CAC105D28BD2A41001B2D2C /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		5CAC106028BD2A41001B2D2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5CAC106228BD2A41001B2D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CAC106A28BD2B41001B2D2C /* BookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCell.swift; sourceTree = "<group>"; };
+		5CAC106C28BD2B53001B2D2C /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
+		5CAC107028BD3BDE001B2D2C /* DarwinNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarwinNotificationCenter.swift; sourceTree = "<group>"; };
+		5CAC107328BD8F70001B2D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5CAC107428BD8F89001B2D2C /* SaveBookmark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SaveBookmark.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +116,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CAC105828BD2A41001B2D2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CAC107528BD8F8D001B2D2C /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -85,6 +133,7 @@
 				5CAC102328BD27E1001B2D2C /* Ococh */,
 				5CAC103928BD27E3001B2D2C /* OcochTests */,
 				5CAC104328BD27E3001B2D2C /* OcochUITests */,
+				5CAC105C28BD2A41001B2D2C /* SaveBookmark */,
 				5CAC102228BD27E1001B2D2C /* Products */,
 				5CAC105428BD2909001B2D2C /* Frameworks */,
 			);
@@ -96,6 +145,7 @@
 				5CAC102128BD27E1001B2D2C /* Ococh.app */,
 				5CAC103628BD27E3001B2D2C /* OcochTests.xctest */,
 				5CAC104028BD27E3001B2D2C /* OcochUITests.xctest */,
+				5CAC105B28BD2A41001B2D2C /* SaveBookmark.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,11 +153,15 @@
 		5CAC102328BD27E1001B2D2C /* Ococh */ = {
 			isa = PBXGroup;
 			children = (
+				5CAC107328BD8F70001B2D2C /* Info.plist */,
 				5CAC105328BD28F4001B2D2C /* Ococh.entitlements */,
 				5CAC102428BD27E1001B2D2C /* OcochApp.swift */,
 				5CAC102628BD27E1001B2D2C /* ContentView.swift */,
+				5CAC106A28BD2B41001B2D2C /* BookmarkCell.swift */,
+				5CAC106C28BD2B53001B2D2C /* BookmarkView.swift */,
 				5CAC102828BD27E3001B2D2C /* Assets.xcassets */,
 				5CAC102D28BD27E3001B2D2C /* Persistence.swift */,
+				5CAC107028BD3BDE001B2D2C /* DarwinNotificationCenter.swift */,
 				5CAC102F28BD27E3001B2D2C /* Ococh.xcdatamodeld */,
 				5CAC102A28BD27E3001B2D2C /* Preview Content */,
 			);
@@ -147,6 +201,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5CAC105C28BD2A41001B2D2C /* SaveBookmark */ = {
+			isa = PBXGroup;
+			children = (
+				5CAC107428BD8F89001B2D2C /* SaveBookmark.entitlements */,
+				5CAC105D28BD2A41001B2D2C /* ShareViewController.swift */,
+				5CAC105F28BD2A41001B2D2C /* MainInterface.storyboard */,
+				5CAC106228BD2A41001B2D2C /* Info.plist */,
+			);
+			path = SaveBookmark;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -157,10 +222,12 @@
 				5CAC101D28BD27E1001B2D2C /* Sources */,
 				5CAC101E28BD27E1001B2D2C /* Frameworks */,
 				5CAC101F28BD27E1001B2D2C /* Resources */,
+				5CAC106928BD2A41001B2D2C /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5CAC106428BD2A41001B2D2C /* PBXTargetDependency */,
 			);
 			name = Ococh;
 			productName = Ococh;
@@ -203,6 +270,23 @@
 			productReference = 5CAC104028BD27E3001B2D2C /* OcochUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		5CAC105A28BD2A41001B2D2C /* SaveBookmark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CAC106628BD2A41001B2D2C /* Build configuration list for PBXNativeTarget "SaveBookmark" */;
+			buildPhases = (
+				5CAC105728BD2A41001B2D2C /* Sources */,
+				5CAC105828BD2A41001B2D2C /* Frameworks */,
+				5CAC105928BD2A41001B2D2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SaveBookmark;
+			productName = SaveBookmark;
+			productReference = 5CAC105B28BD2A41001B2D2C /* SaveBookmark.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -224,6 +308,9 @@
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 5CAC102028BD27E1001B2D2C;
 					};
+					5CAC105A28BD2A41001B2D2C = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 5CAC101C28BD27E1001B2D2C /* Build configuration list for PBXProject "Ococh" */;
@@ -242,6 +329,7 @@
 				5CAC102028BD27E1001B2D2C /* Ococh */,
 				5CAC103528BD27E3001B2D2C /* OcochTests */,
 				5CAC103F28BD27E3001B2D2C /* OcochUITests */,
+				5CAC105A28BD2A41001B2D2C /* SaveBookmark */,
 			);
 		};
 /* End PBXProject section */
@@ -270,6 +358,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CAC105928BD2A41001B2D2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CAC106128BD2A41001B2D2C /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -277,8 +373,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CAC106D28BD2B53001B2D2C /* BookmarkView.swift in Sources */,
+				5CAC106B28BD2B41001B2D2C /* BookmarkCell.swift in Sources */,
 				5CAC102E28BD27E3001B2D2C /* Persistence.swift in Sources */,
 				5CAC102728BD27E1001B2D2C /* ContentView.swift in Sources */,
+				5CAC107128BD3BDE001B2D2C /* DarwinNotificationCenter.swift in Sources */,
 				5CAC103128BD27E3001B2D2C /* Ococh.xcdatamodeld in Sources */,
 				5CAC102528BD27E1001B2D2C /* OcochApp.swift in Sources */,
 			);
@@ -301,6 +400,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5CAC105728BD2A41001B2D2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CAC105E28BD2A41001B2D2C /* ShareViewController.swift in Sources */,
+				5CAC106F28BD3412001B2D2C /* Ococh.xcdatamodeld in Sources */,
+				5CAC107228BD3EFB001B2D2C /* DarwinNotificationCenter.swift in Sources */,
+				5CAC106E28BD31F0001B2D2C /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -314,7 +424,23 @@
 			target = 5CAC102028BD27E1001B2D2C /* Ococh */;
 			targetProxy = 5CAC104128BD27E3001B2D2C /* PBXContainerItemProxy */;
 		};
+		5CAC106428BD2A41001B2D2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CAC105A28BD2A41001B2D2C /* SaveBookmark */;
+			targetProxy = 5CAC106328BD2A41001B2D2C /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5CAC105F28BD2A41001B2D2C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CAC106028BD2A41001B2D2C /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		5CAC104828BD27E3001B2D2C /* Debug */ = {
@@ -434,6 +560,7 @@
 		5CAC104B28BD27E3001B2D2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Ococh/Ococh.entitlements;
@@ -443,6 +570,7 @@
 				DEVELOPMENT_TEAM = S7ZKK95T9U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ococh/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -464,6 +592,7 @@
 		5CAC104C28BD27E3001B2D2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Ococh/Ococh.entitlements;
@@ -473,6 +602,7 @@
 				DEVELOPMENT_TEAM = S7ZKK95T9U;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ococh/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -567,6 +697,58 @@
 			};
 			name = Release;
 		};
+		5CAC106728BD2A41001B2D2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SaveBookmark/SaveBookmark.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S7ZKK95T9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaveBookmark/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SaveBookmark;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiogadigital.Ococh.SaveBookmark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CAC106828BD2A41001B2D2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SaveBookmark/SaveBookmark.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S7ZKK95T9U;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaveBookmark/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SaveBookmark;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiogadigital.Ococh.SaveBookmark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -602,6 +784,15 @@
 			buildConfigurations = (
 				5CAC105128BD27E3001B2D2C /* Debug */,
 				5CAC105228BD27E3001B2D2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CAC106628BD2A41001B2D2C /* Build configuration list for PBXNativeTarget "SaveBookmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CAC106728BD2A41001B2D2C /* Debug */,
+				5CAC106828BD2A41001B2D2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
