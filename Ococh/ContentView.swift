@@ -12,8 +12,8 @@ import CloudKit
 struct ContentView: View {
     //@Environment(\.managedObjectContext) private var viewContext
 
-    private var bookmarks = Bookmark.getAll()
-    @State var statusString = "status?"
+    @State private var bookmarks = Bookmark.getAll()
+    @State private var statusString = "status?"
 
     var body: some View {
         VStack{
@@ -29,6 +29,9 @@ struct ContentView: View {
                     }
                 }
                 .onDelete(perform: deleteBookmarks)
+            }
+            .refreshable {
+                refreshBookmarks()
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -56,6 +59,7 @@ struct ContentView: View {
 
             do {
                 try vc.save()
+                refreshBookmarks()
             } catch {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
@@ -82,6 +86,11 @@ struct ContentView: View {
         }
     }
     
+    func refreshBookmarks() {
+        let vc = Storage.shared.container.viewContext
+        vc.refreshAllObjects()
+        self.bookmarks = Bookmark.getAll()
+    }
     func checkStatus() {
         CKContainer.default().accountStatus { status, error in
             if let error = error {
