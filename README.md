@@ -15,6 +15,6 @@ Filter by `KKYY` in the output of the log to see events generated from the code.
 
 the required boxes clicks in the Signing & Capabilities.
 
-![./RequiredChecksForiCloud.png](iCloud boxes)
+![iCloud boxes](./RequiredChecksForiCloud.png)
 
 Making sure the icloud contain hes the same clicks in both the main app AND the app share extension. (Otherwise, maybe it no works)
