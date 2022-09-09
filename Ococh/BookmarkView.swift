@@ -14,8 +14,14 @@ struct BookmarkView: View {
         HStack{
             VStack(alignment: .leading, spacing: 10){
                 Text(bookmark.title!)
-                Text(bookmark.link!)
-                    .font(.body.italic())
+                Link(destination: URL(string: bookmark.link!)!) {
+                    HStack {
+                        Image(systemName: "link.circle.fill")
+                            .font(.largeTitle)
+                        Text(bookmark.link!)
+                            .font(.body.italic())
+                    }
+                }
                 Text("\(bookmark.timestamp!, formatter: itemFormatter)")
                 Spacer()
             }

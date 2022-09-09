@@ -13,7 +13,7 @@ struct OcochApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            BookmarkListView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
         

@@ -9,7 +9,7 @@ import SwiftUI
 import CoreData
 import CloudKit
 
-struct ContentView: View {
+struct BookmarkListView: View {
     //@Environment(\.managedObjectContext) private var viewContext
 
     @State private var bookmarks = Bookmark.getAll()
@@ -55,7 +55,7 @@ struct ContentView: View {
     private func addBookmark() {
         withAnimation {
             let vc = Storage.shared.container.viewContext
-            var _ = Bookmark(title: "A URL", link: "https://tioga.digital", insertIntoManagedObjectContext: vc)
+            var _ = Bookmark(title: "Tioga Digital", link: "https://tioga.digital", insertIntoManagedObjectContext: vc)
 
             do {
                 try vc.save()
@@ -100,18 +100,18 @@ struct ContentView: View {
                 switch status {
                 case .available:
                   // the user is logged in
-                    statusString =  "User Logged in"
+                    statusString =  "iCloud User Logged in"
                 case .noAccount:
                   // the user is NOT logged in
-                    statusString =  "User NOT Logged in"
+                    statusString =  "iCloud User NOT Logged in"
 
                 case .couldNotDetermine:
                   // for some reason, the status could not be determined (try again)
-                    statusString =  "Could Not Determine"
+                    statusString =  "Could Not Determine User Stautus"
 
                 case .restricted:
                   // iCloud settings are restricted by parental controls or a configuration profile
-                    statusString =  "Settings are Restricted"
+                    statusString =  "User Settings are Restricted"
                 default:
                     statusString = "unknown state!"
                 }
@@ -129,6 +129,6 @@ let itemFormatter: DateFormatter = {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, Storage.preview.container.viewContext)
+        BookmarkListView().environment(\.managedObjectContext, Storage.preview.container.viewContext)
     }
 }

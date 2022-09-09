@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5CAC102528BD27E1001B2D2C /* OcochApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102428BD27E1001B2D2C /* OcochApp.swift */; };
-		5CAC102728BD27E1001B2D2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102628BD27E1001B2D2C /* ContentView.swift */; };
+		5CAC102728BD27E1001B2D2C /* BookmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102628BD27E1001B2D2C /* BookmarkListView.swift */; };
 		5CAC102928BD27E3001B2D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC102828BD27E3001B2D2C /* Assets.xcassets */; };
 		5CAC102C28BD27E3001B2D2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC102B28BD27E3001B2D2C /* Preview Assets.xcassets */; };
 		5CAC102E28BD27E3001B2D2C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102D28BD27E3001B2D2C /* Persistence.swift */; };
@@ -24,8 +24,6 @@
 		5CAC106D28BD2B53001B2D2C /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC106C28BD2B53001B2D2C /* BookmarkView.swift */; };
 		5CAC106E28BD31F0001B2D2C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102D28BD27E3001B2D2C /* Persistence.swift */; };
 		5CAC106F28BD3412001B2D2C /* Ococh.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102F28BD27E3001B2D2C /* Ococh.xcdatamodeld */; };
-		5CAC107128BD3BDE001B2D2C /* DarwinNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC107028BD3BDE001B2D2C /* DarwinNotificationCenter.swift */; };
-		5CAC107228BD3EFB001B2D2C /* DarwinNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC107028BD3BDE001B2D2C /* DarwinNotificationCenter.swift */; };
 		5CAC107528BD8F8D001B2D2C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAC105528BD2909001B2D2C /* CloudKit.framework */; };
 		5CAC107828BE4BC7001B2D2C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC107728BE4BC7001B2D2C /* README.md */; };
 		5CAC107928BE4FDA001B2D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC102828BD27E3001B2D2C /* Assets.xcassets */; };
@@ -72,7 +70,7 @@
 /* Begin PBXFileReference section */
 		5CAC102128BD27E1001B2D2C /* Ococh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ococh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CAC102428BD27E1001B2D2C /* OcochApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcochApp.swift; sourceTree = "<group>"; };
-		5CAC102628BD27E1001B2D2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5CAC102628BD27E1001B2D2C /* BookmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListView.swift; sourceTree = "<group>"; };
 		5CAC102828BD27E3001B2D2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CAC102B28BD27E3001B2D2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5CAC102D28BD27E3001B2D2C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 		5CAC106228BD2A41001B2D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CAC106A28BD2B41001B2D2C /* BookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCell.swift; sourceTree = "<group>"; };
 		5CAC106C28BD2B53001B2D2C /* BookmarkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkView.swift; sourceTree = "<group>"; };
-		5CAC107028BD3BDE001B2D2C /* DarwinNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarwinNotificationCenter.swift; sourceTree = "<group>"; };
 		5CAC107328BD8F70001B2D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5CAC107428BD8F89001B2D2C /* SaveBookmark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SaveBookmark.entitlements; sourceTree = "<group>"; };
 		5CAC107728BE4BC7001B2D2C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -160,12 +157,11 @@
 				5CAC107328BD8F70001B2D2C /* Info.plist */,
 				5CAC105328BD28F4001B2D2C /* Ococh.entitlements */,
 				5CAC102428BD27E1001B2D2C /* OcochApp.swift */,
-				5CAC102628BD27E1001B2D2C /* ContentView.swift */,
+				5CAC102628BD27E1001B2D2C /* BookmarkListView.swift */,
 				5CAC106A28BD2B41001B2D2C /* BookmarkCell.swift */,
 				5CAC106C28BD2B53001B2D2C /* BookmarkView.swift */,
 				5CAC102828BD27E3001B2D2C /* Assets.xcassets */,
 				5CAC102D28BD27E3001B2D2C /* Persistence.swift */,
-				5CAC107028BD3BDE001B2D2C /* DarwinNotificationCenter.swift */,
 				5CAC102F28BD27E3001B2D2C /* Ococh.xcdatamodeld */,
 				5CAC102A28BD27E3001B2D2C /* Preview Content */,
 			);
@@ -382,8 +378,7 @@
 				5CAC106D28BD2B53001B2D2C /* BookmarkView.swift in Sources */,
 				5CAC106B28BD2B41001B2D2C /* BookmarkCell.swift in Sources */,
 				5CAC102E28BD27E3001B2D2C /* Persistence.swift in Sources */,
-				5CAC102728BD27E1001B2D2C /* ContentView.swift in Sources */,
-				5CAC107128BD3BDE001B2D2C /* DarwinNotificationCenter.swift in Sources */,
+				5CAC102728BD27E1001B2D2C /* BookmarkListView.swift in Sources */,
 				5CAC103128BD27E3001B2D2C /* Ococh.xcdatamodeld in Sources */,
 				5CAC102528BD27E1001B2D2C /* OcochApp.swift in Sources */,
 			);
@@ -412,7 +407,6 @@
 			files = (
 				5CAC105E28BD2A41001B2D2C /* ShareViewController.swift in Sources */,
 				5CAC106F28BD3412001B2D2C /* Ococh.xcdatamodeld in Sources */,
-				5CAC107228BD3EFB001B2D2C /* DarwinNotificationCenter.swift in Sources */,
 				5CAC106E28BD31F0001B2D2C /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
