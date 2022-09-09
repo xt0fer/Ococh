@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C90292F28CBBA8F007CF578 /* RequiredChecksForiCloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C90292E28CBBA8F007CF578 /* RequiredChecksForiCloud.png */; };
 		5CAC102528BD27E1001B2D2C /* OcochApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102428BD27E1001B2D2C /* OcochApp.swift */; };
 		5CAC102728BD27E1001B2D2C /* BookmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102628BD27E1001B2D2C /* BookmarkListView.swift */; };
 		5CAC102928BD27E3001B2D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC102828BD27E3001B2D2C /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5C90292E28CBBA8F007CF578 /* RequiredChecksForiCloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RequiredChecksForiCloud.png; sourceTree = "<group>"; };
 		5CAC102128BD27E1001B2D2C /* Ococh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ococh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CAC102428BD27E1001B2D2C /* OcochApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcochApp.swift; sourceTree = "<group>"; };
 		5CAC102628BD27E1001B2D2C /* BookmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListView.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				5CAC107728BE4BC7001B2D2C /* README.md */,
+				5C90292E28CBBA8F007CF578 /* RequiredChecksForiCloud.png */,
 				5CAC102328BD27E1001B2D2C /* Ococh */,
 				5CAC103928BD27E3001B2D2C /* OcochTests */,
 				5CAC104328BD27E3001B2D2C /* OcochUITests */,
@@ -342,6 +345,7 @@
 				5CAC107828BE4BC7001B2D2C /* README.md in Resources */,
 				5CAC102C28BD27E3001B2D2C /* Preview Assets.xcassets in Resources */,
 				5CAC102928BD27E3001B2D2C /* Assets.xcassets in Resources */,
+				5C90292F28CBBA8F007CF578 /* RequiredChecksForiCloud.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
