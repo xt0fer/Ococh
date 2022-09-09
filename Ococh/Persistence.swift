@@ -54,6 +54,7 @@ public class Storage {
         if context.hasChanges {
             do {
                 try context.save()
+                Foundation.NSLog("saving")
             } catch {
                 Foundation.NSLog("unable to save \(error)")
             }
@@ -112,7 +113,7 @@ extension Bookmark {
         // Fetch all objects of one Entity type
         do {
             let objects = try context.fetch(fetchRequest)
-            print("KKYY getting books marks \(objects.count)")
+            print("KKYY getting bookmarks \(objects.count)")
             return objects
          } catch {
            let nserror = error as NSError

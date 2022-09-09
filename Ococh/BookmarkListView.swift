@@ -49,6 +49,7 @@ struct BookmarkListView: View {
         .onAppear(){
             self.checkStatus()
             Storage.shared.refresh()
+            self.bookmarks = Bookmark.getAll()
         }
     }
 
