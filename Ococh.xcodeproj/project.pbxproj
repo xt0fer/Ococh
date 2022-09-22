@@ -28,6 +28,7 @@
 		5CAC107528BD8F8D001B2D2C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAC105528BD2909001B2D2C /* CloudKit.framework */; };
 		5CAC107828BE4BC7001B2D2C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC107728BE4BC7001B2D2C /* README.md */; };
 		5CAC107928BE4FDA001B2D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC102828BD27E3001B2D2C /* Assets.xcassets */; };
+		5CC8F67328DCF03800E17AD8 /* DataManager.md in Resources */ = {isa = PBXBuildFile; fileRef = 5CC8F67228DCF03800E17AD8 /* DataManager.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		5CAC107328BD8F70001B2D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5CAC107428BD8F89001B2D2C /* SaveBookmark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SaveBookmark.entitlements; sourceTree = "<group>"; };
 		5CAC107728BE4BC7001B2D2C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5CC8F67228DCF03800E17AD8 /* DataManager.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DataManager.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				5CAC107728BE4BC7001B2D2C /* README.md */,
+				5CC8F67228DCF03800E17AD8 /* DataManager.md */,
 				5C90292E28CBBA8F007CF578 /* RequiredChecksForiCloud.png */,
 				5CAC102328BD27E1001B2D2C /* Ococh */,
 				5CAC103928BD27E3001B2D2C /* OcochTests */,
@@ -342,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC8F67328DCF03800E17AD8 /* DataManager.md in Resources */,
 				5CAC107828BE4BC7001B2D2C /* README.md in Resources */,
 				5CAC102C28BD27E3001B2D2C /* Preview Assets.xcassets in Resources */,
 				5CAC102928BD27E3001B2D2C /* Assets.xcassets in Resources */,
