@@ -71,14 +71,15 @@ class ShareViewController: SLComposeServiceViewController {
     }
     
     func saveURLtoCoreData(_ url: URL) {
-        let store = Storage.shared
-        let b = Bookmark.getAll().count
-        let vc = store.container.viewContext
-        let _ = Bookmark(title: self.contentText, link: url.absoluteString, insertIntoManagedObjectContext: vc)
-        store.save()
-        vc.refreshAllObjects()
-        let c = Bookmark.getAll().count
-        Foundation.NSLog("KKYY b, c [\(b), \(c)]")
+        let dm = DataManager.shared
+        let bm = Bookmark(title: self.contentText,
+                          link: url.absoluteString,
+                          date: Date(),
+                          blob: Data())
+        Foundation.NSLog("KKYY add: [\(self.contentText)](\(url.absoluteString)")
+        dm.updateAndSave(bookmark: bm)
+        
+        dm.saveData()
     }
     
     private func printProvider(prov: NSItemProvider) {

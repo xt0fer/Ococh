@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
-    <entity name="Bookmark" representedClassName="Bookmark" syncable="YES" codeGenerationType="class">
+    <entity name="BookmarkMO" representedClassName="BookmarkMO" syncable="YES" codeGenerationType="class">
         <attribute name="blob" optional="YES" attributeType="Binary"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="link" optional="YES" attributeType="String"/>
@@ -8,6 +8,6 @@
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Bookmark" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="BookmarkMO" positionX="-63" positionY="-18" width="128" height="104"/>
     </elements>
 </model>

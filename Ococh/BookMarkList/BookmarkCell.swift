@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct BookmarkCell: View {
-    @StateObject var bookmark: Bookmark
+    var bookmark: Bookmark
 
     var body: some View {
-        Text("\(bookmark.title ?? "empty")")
+        Text("\(bookmark.title )")
     }
 }
 
 struct BookmarkCell_Previews: PreviewProvider {
     static var previews: some View {
-        BookmarkCell(bookmark: Bookmark.emptyBookmark())
+        EmptyView()
     }
 }

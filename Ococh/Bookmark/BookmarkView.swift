@@ -8,21 +8,21 @@
 import SwiftUI
 
 struct BookmarkView: View {
-    @StateObject var bookmark: Bookmark
+    var bookmark: Bookmark
     
     var body: some View {
         HStack{
             VStack(alignment: .leading, spacing: 10){
-                Text(bookmark.title!)
-                Link(destination: URL(string: bookmark.link!)!) {
+                Text(bookmark.title)
+                Link(destination: URL(string: bookmark.link)!) {
                     HStack {
                         Image(systemName: "link.circle.fill")
                             .font(.largeTitle)
-                        Text(bookmark.link!)
+                        Text(bookmark.link)
                             .font(.body.italic())
                     }
                 }
-                Text("\(bookmark.timestamp!, formatter: itemFormatter)")
+                Text("\(bookmark.timestamp, formatter: itemFormatter)")
                 Spacer()
             }
         }
@@ -31,6 +31,7 @@ struct BookmarkView: View {
 
 struct BookmarkView_Previews: PreviewProvider {
     static var previews: some View {
-        BookmarkView(bookmark: Bookmark.emptyBookmark())
+EmptyView()
+        
     }
 }

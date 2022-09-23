@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5C90292F28CBBA8F007CF578 /* RequiredChecksForiCloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 5C90292E28CBBA8F007CF578 /* RequiredChecksForiCloud.png */; };
+		5C9D509328DD066400D8C354 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC8F67828DCF3C700E17AD8 /* DataManager.swift */; };
+		5C9D509428DD066C00D8C354 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC8F67628DCF1DB00E17AD8 /* Bookmark.swift */; };
+		5C9D509628DD084300D8C354 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 5C9D509528DD084300D8C354 /* OrderedCollections */; };
 		5CAC102528BD27E1001B2D2C /* OcochApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102428BD27E1001B2D2C /* OcochApp.swift */; };
 		5CAC102728BD27E1001B2D2C /* BookmarkListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102628BD27E1001B2D2C /* BookmarkListView.swift */; };
 		5CAC102928BD27E3001B2D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC102828BD27E3001B2D2C /* Assets.xcassets */; };
 		5CAC102C28BD27E3001B2D2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC102B28BD27E3001B2D2C /* Preview Assets.xcassets */; };
-		5CAC102E28BD27E3001B2D2C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102D28BD27E3001B2D2C /* Persistence.swift */; };
+		5CAC102E28BD27E3001B2D2C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102D28BD27E3001B2D2C /* Storage.swift */; };
 		5CAC103128BD27E3001B2D2C /* Ococh.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102F28BD27E3001B2D2C /* Ococh.xcdatamodeld */; };
 		5CAC103B28BD27E3001B2D2C /* OcochTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC103A28BD27E3001B2D2C /* OcochTests.swift */; };
 		5CAC104528BD27E3001B2D2C /* OcochUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC104428BD27E3001B2D2C /* OcochUITests.swift */; };
@@ -23,12 +26,18 @@
 		5CAC106528BD2A41001B2D2C /* SaveBookmark.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5CAC105B28BD2A41001B2D2C /* SaveBookmark.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5CAC106B28BD2B41001B2D2C /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC106A28BD2B41001B2D2C /* BookmarkCell.swift */; };
 		5CAC106D28BD2B53001B2D2C /* BookmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC106C28BD2B53001B2D2C /* BookmarkView.swift */; };
-		5CAC106E28BD31F0001B2D2C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102D28BD27E3001B2D2C /* Persistence.swift */; };
+		5CAC106E28BD31F0001B2D2C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102D28BD27E3001B2D2C /* Storage.swift */; };
 		5CAC106F28BD3412001B2D2C /* Ococh.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CAC102F28BD27E3001B2D2C /* Ococh.xcdatamodeld */; };
 		5CAC107528BD8F8D001B2D2C /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAC105528BD2909001B2D2C /* CloudKit.framework */; };
 		5CAC107828BE4BC7001B2D2C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC107728BE4BC7001B2D2C /* README.md */; };
 		5CAC107928BE4FDA001B2D2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CAC102828BD27E3001B2D2C /* Assets.xcassets */; };
 		5CC8F67328DCF03800E17AD8 /* DataManager.md in Resources */ = {isa = PBXBuildFile; fileRef = 5CC8F67228DCF03800E17AD8 /* DataManager.md */; };
+		5CC8F67728DCF1DC00E17AD8 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC8F67628DCF1DB00E17AD8 /* Bookmark.swift */; };
+		5CC8F67928DCF3C700E17AD8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC8F67828DCF3C700E17AD8 /* DataManager.swift */; };
+		5CC8F67C28DCF6FF00E17AD8 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 5CC8F67B28DCF6FF00E17AD8 /* OrderedCollections */; };
+		5CC8F67E28DCFBF000E17AD8 /* BookmarkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC8F67D28DCFBF000E17AD8 /* BookmarkListViewModel.swift */; };
+		5CC8F68028DCFF8500E17AD8 /* BookmarkEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC8F67F28DCFF8500E17AD8 /* BookmarkEditorView.swift */; };
+		5CC8F68228DD000A00E17AD8 /* BookmarkEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC8F68128DD000A00E17AD8 /* BookmarkEditorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +85,7 @@
 		5CAC102628BD27E1001B2D2C /* BookmarkListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListView.swift; sourceTree = "<group>"; };
 		5CAC102828BD27E3001B2D2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CAC102B28BD27E3001B2D2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5CAC102D28BD27E3001B2D2C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		5CAC102D28BD27E3001B2D2C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		5CAC103028BD27E3001B2D2C /* Ococh.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ococh.xcdatamodel; sourceTree = "<group>"; };
 		5CAC103628BD27E3001B2D2C /* OcochTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OcochTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CAC103A28BD27E3001B2D2C /* OcochTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OcochTests.swift; sourceTree = "<group>"; };
@@ -95,6 +104,11 @@
 		5CAC107428BD8F89001B2D2C /* SaveBookmark.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SaveBookmark.entitlements; sourceTree = "<group>"; };
 		5CAC107728BE4BC7001B2D2C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5CC8F67228DCF03800E17AD8 /* DataManager.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DataManager.md; sourceTree = "<group>"; };
+		5CC8F67628DCF1DB00E17AD8 /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
+		5CC8F67828DCF3C700E17AD8 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		5CC8F67D28DCFBF000E17AD8 /* BookmarkListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListViewModel.swift; sourceTree = "<group>"; };
+		5CC8F67F28DCFF8500E17AD8 /* BookmarkEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkEditorView.swift; sourceTree = "<group>"; };
+		5CC8F68128DD000A00E17AD8 /* BookmarkEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkEditorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC8F67C28DCF6FF00E17AD8 /* OrderedCollections in Frameworks */,
 				5CAC105628BD2909001B2D2C /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -124,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C9D509628DD084300D8C354 /* OrderedCollections in Frameworks */,
 				5CAC107528BD8F8D001B2D2C /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,13 +178,14 @@
 			children = (
 				5CAC107328BD8F70001B2D2C /* Info.plist */,
 				5CAC105328BD28F4001B2D2C /* Ococh.entitlements */,
-				5CAC102428BD27E1001B2D2C /* OcochApp.swift */,
-				5CAC102628BD27E1001B2D2C /* BookmarkListView.swift */,
-				5CAC106A28BD2B41001B2D2C /* BookmarkCell.swift */,
-				5CAC106C28BD2B53001B2D2C /* BookmarkView.swift */,
-				5CAC102828BD27E3001B2D2C /* Assets.xcassets */,
-				5CAC102D28BD27E3001B2D2C /* Persistence.swift */,
+				5CAC102D28BD27E3001B2D2C /* Storage.swift */,
+				5CC8F67828DCF3C700E17AD8 /* DataManager.swift */,
+				5CC8F67628DCF1DB00E17AD8 /* Bookmark.swift */,
 				5CAC102F28BD27E3001B2D2C /* Ococh.xcdatamodeld */,
+				5CAC102428BD27E1001B2D2C /* OcochApp.swift */,
+				5CC8F67428DCF11600E17AD8 /* BookMarkList */,
+				5CC8F67528DCF12500E17AD8 /* Bookmark */,
+				5CAC102828BD27E3001B2D2C /* Assets.xcassets */,
 				5CAC102A28BD27E3001B2D2C /* Preview Content */,
 			);
 			path = Ococh;
@@ -218,6 +235,26 @@
 			path = SaveBookmark;
 			sourceTree = "<group>";
 		};
+		5CC8F67428DCF11600E17AD8 /* BookMarkList */ = {
+			isa = PBXGroup;
+			children = (
+				5CAC102628BD27E1001B2D2C /* BookmarkListView.swift */,
+				5CAC106A28BD2B41001B2D2C /* BookmarkCell.swift */,
+				5CC8F67D28DCFBF000E17AD8 /* BookmarkListViewModel.swift */,
+			);
+			path = BookMarkList;
+			sourceTree = "<group>";
+		};
+		5CC8F67528DCF12500E17AD8 /* Bookmark */ = {
+			isa = PBXGroup;
+			children = (
+				5CAC106C28BD2B53001B2D2C /* BookmarkView.swift */,
+				5CC8F67F28DCFF8500E17AD8 /* BookmarkEditorView.swift */,
+				5CC8F68128DD000A00E17AD8 /* BookmarkEditorViewModel.swift */,
+			);
+			path = Bookmark;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -236,6 +273,9 @@
 				5CAC106428BD2A41001B2D2C /* PBXTargetDependency */,
 			);
 			name = Ococh;
+			packageProductDependencies = (
+				5CC8F67B28DCF6FF00E17AD8 /* OrderedCollections */,
+			);
 			productName = Ococh;
 			productReference = 5CAC102128BD27E1001B2D2C /* Ococh.app */;
 			productType = "com.apple.product-type.application";
@@ -289,6 +329,9 @@
 			dependencies = (
 			);
 			name = SaveBookmark;
+			packageProductDependencies = (
+				5C9D509528DD084300D8C354 /* OrderedCollections */,
+			);
 			productName = SaveBookmark;
 			productReference = 5CAC105B28BD2A41001B2D2C /* SaveBookmark.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -328,6 +371,9 @@
 				Base,
 			);
 			mainGroup = 5CAC101828BD27E1001B2D2C;
+			packageReferences = (
+				5CC8F67A28DCF6FF00E17AD8 /* XCRemoteSwiftPackageReference "swift-collections" */,
+			);
 			productRefGroup = 5CAC102228BD27E1001B2D2C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -384,10 +430,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CAC106D28BD2B53001B2D2C /* BookmarkView.swift in Sources */,
+				5CC8F67E28DCFBF000E17AD8 /* BookmarkListViewModel.swift in Sources */,
+				5CC8F67928DCF3C700E17AD8 /* DataManager.swift in Sources */,
 				5CAC106B28BD2B41001B2D2C /* BookmarkCell.swift in Sources */,
-				5CAC102E28BD27E3001B2D2C /* Persistence.swift in Sources */,
+				5CC8F68228DD000A00E17AD8 /* BookmarkEditorViewModel.swift in Sources */,
+				5CAC102E28BD27E3001B2D2C /* Storage.swift in Sources */,
+				5CC8F68028DCFF8500E17AD8 /* BookmarkEditorView.swift in Sources */,
 				5CAC102728BD27E1001B2D2C /* BookmarkListView.swift in Sources */,
 				5CAC103128BD27E3001B2D2C /* Ococh.xcdatamodeld in Sources */,
+				5CC8F67728DCF1DC00E17AD8 /* Bookmark.swift in Sources */,
 				5CAC102528BD27E1001B2D2C /* OcochApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,9 +464,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C9D509428DD066C00D8C354 /* Bookmark.swift in Sources */,
 				5CAC105E28BD2A41001B2D2C /* ShareViewController.swift in Sources */,
+				5C9D509328DD066400D8C354 /* DataManager.swift in Sources */,
 				5CAC106F28BD3412001B2D2C /* Ococh.xcdatamodeld in Sources */,
-				5CAC106E28BD31F0001B2D2C /* Persistence.swift in Sources */,
+				5CAC106E28BD31F0001B2D2C /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -806,6 +859,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CC8F67A28DCF6FF00E17AD8 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5C9D509528DD084300D8C354 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CC8F67A28DCF6FF00E17AD8 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+		5CC8F67B28DCF6FF00E17AD8 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CC8F67A28DCF6FF00E17AD8 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		5CAC102F28BD27E3001B2D2C /* Ococh.xcdatamodeld */ = {
