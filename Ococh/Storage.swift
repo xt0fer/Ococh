@@ -40,6 +40,49 @@ struct PersistentStore {
             storeDescription.setOption(true as NSNumber, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
         })
 
+        /**
+         Run initializeCloudKitSchema() once to update the CloudKit schema every time you change the Core Data model.
+         Do not call this code in the production environment.
+         */
+        //#if InitializeCloudKitSchema
+//        print("KKYY InitializeCloudKitSchema")
+//        do {
+//            try container.initializeCloudKitSchema()
+//        } catch {
+//            print("\(#function): initializeCloudKitSchema: \(error)")
+//        }
+        //#else
+        container.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        //container.viewContext.transactionAuthor = TransactionAuthor.app
+
+        /**
+         Automatically merge the changes from other contexts.
+         */
+        container.viewContext.automaticallyMergesChangesFromParent = true
+
+        /**
+         Pin the viewContext to the current generation token and set it to keep itself up to date with local changes.
+         */
+        do {
+            try container.viewContext.setQueryGenerationFrom(.current)
+        } catch {
+            fatalError("#\(#function): Failed to pin viewContext to the current generation:\(error)")
+        }
+        
+        /**
+         Observe the following notifications:
+         - The remote change notifications from container.persistentStoreCoordinator
+         - The .NSManagedObjectContextDidSave notifications from any context.
+         - The event change notifications from the container.
+         */
+//        NotificationCenter.default.addObserver(self, selector: #selector(storeRemoteChange(_:)),
+//                                               name: .NSPersistentStoreRemoteChange,
+//                                               object: container.persistentStoreCoordinator)
+//        NotificationCenter.default.addObserver(self, selector: #selector(containerEventChanged(_:)),
+//                                               name: NSPersistentCloudKitContainer.eventChangedNotification,
+//                                               object: container)
+        //#endif
+
     }
     
     var context: NSManagedObjectContext { container.viewContext }

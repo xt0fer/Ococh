@@ -15,6 +15,13 @@ struct OcochApp: App {
     
 
     var body: some Scene {
+#if InitializeCloudKitSchema
+WindowGroup {
+    Text("Initializing CloudKit Schema...").font(.title)
+    Text("Stop after Xcode says 'no more requests to execute', " +
+         "then check with CloudKit Console if the schema is created correctly.").padding()
+}
+#else
         WindowGroup {
             BookmarkListView()
        }
@@ -33,5 +40,7 @@ struct OcochApp: App {
                 print("unknown")
             }
         }
+#endif
+
     }
 }

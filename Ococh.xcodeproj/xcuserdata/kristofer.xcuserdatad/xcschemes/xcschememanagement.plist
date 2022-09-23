@@ -4,15 +4,43 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>InitializeCloudKitSchema.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>Ococh.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>SaveBookmark.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>5CAC102028BD27E1001B2D2C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CAC103528BD27E3001B2D2C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CAC103F28BD27E3001B2D2C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5CAC105A28BD2A41001B2D2C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
