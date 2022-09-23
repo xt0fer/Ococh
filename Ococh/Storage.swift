@@ -13,7 +13,6 @@ struct PersistentStore {
     let container: NSPersistentCloudKitContainer
 
     init(inMemory: Bool = false) {
-        //container = NSPersistentContainer(name: "Ococh")
         container = NSPersistentCloudKitContainer(name: "Ococh2")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
@@ -34,12 +33,12 @@ struct PersistentStore {
                 */
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
+//            guard let description = container.persistentStoreDescriptions.first else {
+//                    fatalError("###\(#function): Failed to retrieve a persistent store description.")
+//                }
+            storeDescription.setOption(true as NSNumber, forKey: NSPersistentHistoryTrackingKey)
+            storeDescription.setOption(true as NSNumber, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
         })
-        guard let description = container.persistentStoreDescriptions.first else {
-                fatalError("###\(#function): Failed to retrieve a persistent store description.")
-            }
-        description.setOption(true as NSNumber, forKey: NSPersistentHistoryTrackingKey)
-        description.setOption(true as NSNumber, forKey: NSPersistentStoreRemoteChangeNotificationPostOptionKey)
 
     }
     

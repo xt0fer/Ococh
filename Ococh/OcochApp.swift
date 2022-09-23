@@ -22,7 +22,7 @@ struct OcochApp: App {
             switch phase {
             case .active:
                 print("Active")
-                dataManager.fetchBookmarks()
+                //dataManager.fetchBookmarks()
             case .inactive:
                 print("Inactive")
                 dataManager.saveData()
